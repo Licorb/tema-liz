@@ -519,7 +519,7 @@ footer .social-links {
   margin-bottom: 80px;
 }
 
-.wpt-avatar {
+.liz-avatar {
   display: inline-block;
   border-radius: 500px;
   overflow: hidden;
@@ -528,15 +528,15 @@ footer .social-links {
   vertical-align: middle;
   margin: 0 0 20px;
 }
-.wpt-avatar img {
+.liz-avatar img {
   display: block;
 }
-.wpt-avatar.small {
+.liz-avatar.small {
   width: 24px;
   height: 24px;
   margin: 0 5px 0 0;
 }
-.wpt-avatar.large {
+.liz-avatar.large {
   width: auto;
   height: auto;
   max-width: 100%;
@@ -926,12 +926,12 @@ ol.children {
   color: #c6ccd2;
 }
 
-.author-bio .wpt-avatar {
+.author-bio .liz-avatar {
   margin: 20px auto 40px;
   display: block;
 }
 @media all and (min-width: 40.063em) {
-  .author-bio .wpt-avatar {
+  .author-bio .liz-avatar {
     margin: 20px 0 40px;
   }
 }
