@@ -12,13 +12,14 @@
         
               <article class="post">
                 <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-                <h2><?php echo strip_tags (get_the_excerpt()); ?></h2>
+
                 <ul class="post-meta no-bullet">
                   <li class="author">
                     <span class="liz-avatar small">
                       <?php echo get_avatar( get_the_author_meta('ID'), 24); ?>
                      </span>
                       by <?php the_author_posts_link(); ?>
+                  
                   </li>
                   <li class="cat">em <?php the_category( ', '); ?></li>
                   <li class="cat">em <?php the_time('j'); ?> de <?php the_time('F, Y'); ?></li>
@@ -27,7 +28,12 @@
                 <div class="img-container">
                   <?php the_post_thumbnail('large'); ?>
                 </div> 
-              <?php endif; ?>
+                <?php endif; ?>
+
+                <?php the_content(); ?>
+
+                <?php comments_template(); ?>
+
                 </article>     
           
             <?php endwhile; else : ?>
